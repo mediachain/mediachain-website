@@ -1,3 +1,30 @@
-html {
-  font-size: 150%;
+:root {
+  --vertical-base: 1.25;
 }
+
+/*----------------------------------------
+  TYPOGRAPHY
+----------------------------------------*/
+
+h1, h2, h3, h4, h5, h6, p { margin: 0; }
+h1, h2, h3, h4, h5, h6 { 
+  font-family: var(--headline-font);
+  font-weight: normal;
+}
+
+p { font-size: calc(var(--vertical-base) * 1rem); }
+
+.big { font-size: calc(var(--vertical-base) * 4rem); }
+h1, .h1 { font-size: calc(var(--vertical-base) * 2rem); }
+h2, .h2 { font-size: calc(var(--vertical-base) * 1.5rem); }
+h3, .h3 { font-size: calc(var(--vertical-base) * 1.25rem); }
+h4, .h4 { font-size: calc(var(--vertical-base) * 1rem); }
+h5, .h5 { font-size: calc(var(--vertical-base) * 0.875rem); }
+h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
+.small { font-size: calc(var(--vertical-base) * 0.625rem); }
+
+
+/*----------------------------------------
+  LAYOUT
+----------------------------------------*/
+.max-width-5 { max-width: 80rem; }
