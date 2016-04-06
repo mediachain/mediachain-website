@@ -59,24 +59,29 @@
 }
 
 :root {
-  --vertical-base: 1.25;
+  --vertical-base: 1;
   --font-family: 'pt_sansregular', Helvetica, sans-serif;
   --font-family-bold: 'pt_sansbold', Helvetica, sans-serif;
-  --font-family--alt: 'theinhardt_regularregular', Helvetica, sans-serif;
-  --font-family--alt-bold: 'theinhardtbold', Helvetica, sans-serif;
+}
+
+* { box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: calc(var(--vertical-base, 1) * 100%);
 }
 
 body {
   font-family: var(--font-family);
+  line-height: 1.375;
+  overflow-x: hidden;
 }
 
-body.theinhardt {
-  font-family: var(--font-family--alt);
-  letter-spacing: 2pt;
+a, a:link {
+  color: inherit;
 }
-body.theinhardt .bold {
-  font-family: var(--font-family--alt-bold);
-}
+
+
 
 /*----------------------------------------
   TYPOGRAPHY
@@ -89,9 +94,10 @@ h1, h2, h3, h4, h5, h6 {
 
 p { font-size: calc(var(--vertical-base) * 1rem); }
 
-.big { font-size: calc(var(--vertical-base) * 4rem); }
+.mega { font-size: calc(var(--vertical-base) * 4rem); }
+.big { font-size: calc(var(--vertical-base) * 2.5rem); }
 h1, .h1 { font-size: calc(var(--vertical-base) * 2rem); }
-h2, .h2 { font-size: calc(var(--vertical-base) * 1.5rem); }
+h2, .h2 { font-size: calc(var(--vertical-base) * 1.75rem); }
 h3, .h3 { font-size: calc(var(--vertical-base) * 1.25rem); }
 h4, .h4 { font-size: calc(var(--vertical-base) * 1rem); }
 h5, .h5 { font-size: calc(var(--vertical-base) * 0.875rem); }
@@ -102,4 +108,8 @@ h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
 /*----------------------------------------
   LAYOUT
 ----------------------------------------*/
-.max-width-5 { max-width: 80rem; }
+.max-width-5 { max-width: 72rem; }
+.full-width { width: 100%; }
+.full-height { height: 100%; }
+
+.footer { border-top: 5px solid #000; }
