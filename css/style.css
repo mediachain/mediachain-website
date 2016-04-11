@@ -100,6 +100,8 @@ h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
   padding-bottom: 6rem;
 }
 
+
+
 .table { display: table; }
 .table-cell {
   display: table-cell;
@@ -130,7 +132,6 @@ h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
 
 
 .hide { display: none; }
-.height-65vh { height: 65vh; }
 .section-height { min-height: 760px; }
 .section-title {
   border-bottom: 5px solid black;
@@ -141,13 +142,19 @@ h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
   height: 2.25rem;
 }
 
-.banner-text-width { width: 100%; }
-@media only screen and (min-width: 480px) {
-  .banner-text-width { width: 100%; }
-}
+.banner-text-width { width: 90%; }
+.banner-text-h1 { font-size: calc(var(--vertical-base) * 1.75rem); }
+.banner-text-h2 { font-size: calc(var(--vertical-base) * 1.25rem); }
+.main-canvas { position: relative; }
+
 @media only screen and (min-width: 768px) {
-  .banner-text-width { width: 100%; }
+  .md-p4 { padding: 4rem; }
+  .height-65vh { height: 65vh; }
+  .banner-text-width { width: 42rem; }
+  .main-canvas { position: absolute; }
 }
-@media only screen and (min-width: 1024px) {
-  .banner-text-width { width: 60rem; }
+@media only screen and (min-width: 1220px) {
+  .banner-text-width { width: 54rem; }
+  .banner-text-h1 { font-size: calc(var(--vertical-base) * 2.25rem); }
+  .banner-text-h2 { font-size: calc(var(--vertical-base) * 1.5rem); }
 }
