@@ -2,8 +2,8 @@
 
   var handleCanvasIcons = {
     icons: [],
-    xStart: -11,
-    yStart: 27,
+    xStart: 104,
+    yStart: 93,
     populateIcons: function () {
       var self = this;
       $('g[id^="cw"]').each(function () {
@@ -13,18 +13,27 @@
     randomizer: function (min, max) {
       return Math.floor(Math.random()*(max-min+1)+min);
     },
-    staggerX: function (x) {
-      var cap = Math.floor($('#cw-icons').width() / 84.8) - 1;
-      return x + 84.8 * this.randomizer(1, cap);
+    staggerPosition: function (x, y) {
+      var xCap = Math.floor($('#cw-icons').width() / 126) - 1;
+      var yCap = Math.floor($('#cw-icons').height() / 220) - 1;
+      var coordinates = {
+        x: x + 126 * this.randomizer(0, xCap),
+        y: y + 220 * this.randomizer(0, yCap)
+      }
+      return coordinates;
     },
-    staggerY: function (y) {
-      var cap = Math.floor($('#cw-icons').height() / 84.8) - 1;
-      return y + 84.5 * this.randomizer(0, cap);
-    },
-    setPosition: function (icon) {
-      var x = this.staggerX(this.xStart);
-      var y = this.staggerY(this.yStart);
-      $(icon).css({'transform':'translate('+x+'px,'+y+'px)'});
+    setPosition: function (index, icon) {
+      var delay = this.randomizer(0,700);
+      if (index < 5) {
+        var coords = this.staggerPosition(this.xStart, this.yStart);
+      } else if (index >= 5) {
+        var coords = this.staggerPosition(this.xStart+63, this.yStart+110);
+      }
+
+      $(icon).css({
+        'transform':'translate('+coords.x+'px,'+coords.y+'px)',
+        'transition': 'opacity 1s ease '+delay+'ms'
+      });
       $(icon).removeClass('hide');
     },
     init: function () {
@@ -32,7 +41,7 @@
 
       this.populateIcons();
       $.each(self.icons, function (i, icon) {
-        self.setPosition(icon);
+        self.setPosition(i, icon);
       });
 
     }
