@@ -24,9 +24,9 @@
     },
     setPosition: function (index, icon) {
       var delay = this.randomizer(0,700);
-      if (index < 5) {
+      if (index < this.icons.length / 2) {
         var coords = this.staggerPosition(this.xStart, this.yStart);
-      } else if (index >= 5) {
+      } else if (index >= this.icons.length / 2) {
         var coords = this.staggerPosition(this.xStart+63, this.yStart+110);
       }
 
