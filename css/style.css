@@ -109,9 +109,9 @@ h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
 }
 .bg-gradient-bottom {
   background: white;
-  background: -moz-linear-gradient(top,  transparent 20%, #ffffff 100%);
-  background: -webkit-linear-gradient(top,  transparent 20%, #ffffff 100%);
-  background: linear-gradient(to bottom,  transparent 20%, #ffffff 100%);
+  background: -moz-linear-gradient(top,  transparent 0%, #ffffff 50%);
+  background: -webkit-linear-gradient(top,  transparent 0%, #ffffff 50%);
+  background: linear-gradient(to bottom,  transparent 0%, #ffffff 50%);
 }
 .bg-gradient-top {
   background: white;
@@ -139,6 +139,7 @@ h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
 }
 .form button {
   border: 0;
+  outline: 0;
   background: transparent;
   cursor: pointer;
 }
