@@ -42,6 +42,7 @@ html {
 }
 
 body {
+  background-image: url(/img/background.svg);
   font-family: var(--font-family);
   line-height: var(--line-height-3);
   overflow-x: hidden;
@@ -100,7 +101,24 @@ h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
   padding-bottom: 6rem;
 }
 
-
+.bg-gradient-vertical {
+  background: white;
+  background: -moz-linear-gradient(top,  transparent 0%, #ffffff 25%, #ffffff 75%, transparent 100%);
+  background: -webkit-linear-gradient(top,  transparent 0%, #ffffff 25%, #ffffff 75%, transparent 100%);
+  background: linear-gradient(to bottom,  transparent 0%, #ffffff 25%, #ffffff 75%, transparent 100%);
+}
+.bg-gradient-bottom {
+  background: white;
+  background: -moz-linear-gradient(top,  transparent 20%, #ffffff 100%);
+  background: -webkit-linear-gradient(top,  transparent 20%, #ffffff 100%);
+  background: linear-gradient(to bottom,  transparent 20%, #ffffff 100%);
+}
+.bg-gradient-top {
+  background: white;
+  background: -moz-linear-gradient(top,  #ffffff 20%, transparent 100%);
+  background: -webkit-linear-gradient(top,  #ffffff 20%, transparent 100%);
+  background: linear-gradient(to bottom,  #ffffff 20%, transparent 100%);
+}
 
 .table { display: table; }
 .table-cell {
@@ -132,7 +150,7 @@ h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
 
 
 .hide { display: none; }
-.section-height { min-height: 760px; }
+.section-height { min-height: 700px; }
 .section-title {
   border-bottom: 5px solid black;
   line-height: 2;
