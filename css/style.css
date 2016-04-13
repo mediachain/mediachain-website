@@ -178,6 +178,7 @@ h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
 .max-width { max-width: 64rem; }
 .main-svg {
   height: 300px;
+  overflow: visible;
   top: -4.2rem;
 }
 

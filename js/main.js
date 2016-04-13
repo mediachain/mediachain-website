@@ -18,7 +18,7 @@
     staggerPosition: function (x, y) {
       var $canvas = $('#cw-icons');
       var xCap = Math.floor($canvas.width() / this.honeycombWidth);
-      var yCap = Math.floor($canvas.height() / this.honeycombHeight);
+      var yCap = Math.floor($canvas.height() / this.honeycombHeight) - 1;
       var newCoordinates = {
         x: x + this.honeycombWidth * this.randomizer(0, xCap),
         y: y + this.honeycombHeight * this.randomizer(0, yCap)
