@@ -101,16 +101,18 @@ h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
 
 
 .bg-gradient-bottom {
-  background: white;
-  background: -moz-linear-gradient(top,  transparent 0%, #ffffff 70%);
-  background: -webkit-linear-gradient(top,  transparent 0%, #ffffff 70%);
-  background: linear-gradient(to bottom,  transparent 0%, #ffffff 70%);
+  background-image: linear-gradient(top, rgba(255,255,255,0) 0%, #fff 100%);
+  background-image: -o-linear-gradient(top, rgba(255,255,255,0) 0%, #fff 100%);
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, #fff 100%);
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, #fff 100%);
+  background-image: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, #fff 100%);
 }
 .bg-gradient-top {
-  background: white;
-  background: -moz-linear-gradient(top,  #ffffff 50%, transparent 100%);
-  background: -webkit-linear-gradient(top,  #ffffff 50%, transparent 100%);
-  background: linear-gradient(to bottom,  #ffffff 50%, transparent 100%);
+  background-image: linear-gradient(bottom, rgba(255,255,255,0) 0%, #fff 100%);
+  background-image: -o-linear-gradient(bottom, rgba(255,255,255,0) 0%, #fff 100%);
+  background-image: -moz-linear-gradient(bottom, rgba(255,255,255,0) 0%, #fff 100%);
+  background-image: -webkit-linear-gradient(bottom, rgba(255,255,255,0) 0%, #fff 100%);
+  background-image: -ms-linear-gradient(bottom, rgba(255,255,255,0) 0%, #fff 100%);
 }
 
 .table { display: table; }
