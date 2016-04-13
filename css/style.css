@@ -81,6 +81,10 @@ h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
 .small { font-size: calc(var(--vertical-base) * 0.625rem); }
 .bold { font-family: var(--font-family-bold) }
 
+@media only screen and (min-width: 1200px) {
+  h3, .h3 { font-size: calc(var(--vertical-base) * 1.5rem); }
+}
+
 /*----------------------------------------
   LAYOUT
 ----------------------------------------*/
