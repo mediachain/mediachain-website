@@ -230,82 +230,90 @@ h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
   .max-width { max-width: 80rem; }
 }
 
-.illo-1-main-circle { animation: big-circle-pop 3.4s linear infinite 0.9s; }
+.illo-1-main-circle { animation: big-circle-pop 2.4s linear infinite 0.6s; }
 
-.illo-1 .illo-1-circles:nth-child(6) { animation: small-circle-pop 3.4s linear infinite; }
-.illo-1 .illo-1-circles:nth-child(5) { animation: small-circle-pop 3.4s linear infinite 0.15s; }
-.illo-1 .illo-1-circles:nth-child(4) { animation: small-circle-pop 3.4s linear infinite 0.3s; }
-.illo-1 .illo-1-circles:nth-child(3) { animation: small-circle-pop 3.4s linear infinite 0.45s; }
-.illo-1 .illo-1-circles:nth-child(2) { animation: small-circle-pop 3.4s linear infinite 0.6s; }
-.illo-1 .illo-1-circles:nth-child(1) { animation: small-circle-pop 3.4s linear infinite 0.75s; }
+.illo-1 .illo-1-circles:nth-child(6) { animation: small-circle-pop 2.4s linear infinite; }
+.illo-1 .illo-1-circles:nth-child(5) { animation: small-circle-pop 2.4s linear infinite 0.1s; }
+.illo-1 .illo-1-circles:nth-child(4) { animation: small-circle-pop 2.4s linear infinite 0.2s; }
+.illo-1 .illo-1-circles:nth-child(3) { animation: small-circle-pop 2.4s linear infinite 0.3s; }
+.illo-1 .illo-1-circles:nth-child(2) { animation: small-circle-pop 2.4s linear infinite 0.4s; }
+.illo-1 .illo-1-circles:nth-child(1) { animation: small-circle-pop 2.4s linear infinite 0.5s; }
 
-.illo-2-main-circle { animation: big-circle-pop 4s linear infinite 1.56s; }
-.illo-2-secondary-circle { animation: small-circle-pop 4s linear infinite 1.56s; }
+.illo-2-main-circle { animation: big-circle-pop 3s linear infinite 0.65s; }
 
-.illo-2 .illo-2-circles:nth-child(13) { animation: small-circle-pop 4s linear infinite; }
-.illo-2 .illo-2-circles:nth-child(12) { animation: small-circle-pop 4s linear infinite 0.12s; }
-.illo-2 .illo-2-circles:nth-child(11) { animation: small-circle-pop 4s linear infinite 0.24s; }
-.illo-2 .illo-2-circles:nth-child(10) { animation: small-circle-pop 4s linear infinite 0.36s; }
-.illo-2 .illo-2-circles:nth-child(9) { animation: small-circle-pop 4s linear infinite 0.48s; }
-.illo-2 .illo-2-circles:nth-child(8) { animation: small-circle-pop 4s linear infinite 0.6s; }
-.illo-2 .illo-2-circles:nth-child(7) { animation: small-circle-pop 4s linear infinite 0.72s; }
-.illo-2 .illo-2-circles:nth-child(6) { animation: small-circle-pop 4s linear infinite 0.84s; }
-.illo-2 .illo-2-circles:nth-child(5) { animation: small-circle-pop 4s linear infinite 0.96s; }
-.illo-2 .illo-2-circles:nth-child(4) { animation: small-circle-pop 4s linear infinite 1.08s; }
-.illo-2 .illo-2-circles:nth-child(3) { animation: small-circle-pop 4s linear infinite 1.2s; }
-.illo-2 .illo-2-circles:nth-child(2) { animation: small-circle-pop 4s linear infinite 1.32s; }
-.illo-2 .illo-2-circles:nth-child(1) { animation: small-circle-pop 4s linear infinite 1.44s; }
+.illo-2 .illo-2-circles:nth-child(13) { animation: small-circle-pop 3s linear infinite; }
+.illo-2 .illo-2-circles:nth-child(12) { animation: small-circle-pop 3s linear infinite 0.05s; }
+.illo-2 .illo-2-circles:nth-child(11) { animation: small-circle-pop 3s linear infinite 0.1s; }
+.illo-2 .illo-2-circles:nth-child(10) { animation: small-circle-pop 3s linear infinite 0.15s; }
+.illo-2 .illo-2-circles:nth-child(9) { animation: small-circle-pop 3s linear infinite 0.2s; }
+.illo-2 .illo-2-circles:nth-child(8) { animation: small-circle-pop 3s linear infinite 0.25s; }
+.illo-2 .illo-2-circles:nth-child(7) { animation: small-circle-pop 3s linear infinite 0.3s; }
+.illo-2 .illo-2-circles:nth-child(6) { animation: small-circle-pop 3s linear infinite 0.35s; }
+.illo-2 .illo-2-circles:nth-child(5) { animation: small-circle-pop 3s linear infinite 0.4s; }
+.illo-2 .illo-2-circles:nth-child(4) { animation: small-circle-pop 3s linear infinite 0.45s; }
+.illo-2 .illo-2-circles:nth-child(3) { animation: small-circle-pop 3s linear infinite 0.5s; }
+.illo-2 .illo-2-circles:nth-child(2) { animation: small-circle-pop 3s linear infinite 0.55s; }
+.illo-2 .illo-2-circles:nth-child(1) { animation: small-circle-pop 3s linear infinite 0.6s; }
 
-.illo-3-first-circle { animation: big-circle-pop 5s linear infinite; }
-.illo-3-second-circle { animation: big-circle-pop 5s linear infinite 1s; }
-.illo-3-third-circle { animation: big-circle-pop 5s linear infinite 2s; }
-.illo-3-fourth-circle { animation: big-circle-pop 5s linear infinite 3s; }
-.illo-3-fifth-circle { animation: big-circle-pop 5s linear infinite 4s; }
+.illo-3-first-circle { animation: big-circle-pop 3.5s linear infinite; }
+.illo-3-second-circle { animation: big-circle-pop 3.5s linear infinite .5s; }
+.illo-3-third-circle { animation: big-circle-pop 3.5s linear infinite 1s; }
+.illo-3-fourth-circle { animation: big-circle-pop 3.5s linear infinite 1.5s; }
+.illo-3-fifth-circle { animation: big-circle-pop 3.5s linear infinite 2s; }
 
-.illo-3-1 .illo-3-circles:nth-child(1) { animation: small-circle-pop 5s linear infinite 0.1s; }
-.illo-3-1 .illo-3-circles:nth-child(2) { animation: small-circle-pop 5s linear infinite 0.2s; }
-.illo-3-1 .illo-3-circles:nth-child(3) { animation: small-circle-pop 5s linear infinite 0.3s; }
-.illo-3-1 .illo-3-circles:nth-child(4) { animation: small-circle-pop 5s linear infinite 0.4s; }
-.illo-3-1 .illo-3-circles:nth-child(5) { animation: small-circle-pop 5s linear infinite 0.5s; }
-.illo-3-1 .illo-3-circles:nth-child(6) { animation: small-circle-pop 5s linear infinite 0.6s; }
-.illo-3-1 .illo-3-circles:nth-child(7) { animation: small-circle-pop 5s linear infinite 0.7s; }
-.illo-3-1 .illo-3-circles:nth-child(8) { animation: small-circle-pop 5s linear infinite 0.8s; }
-.illo-3-1 .illo-3-circles:nth-child(9) { animation: small-circle-pop 5s linear infinite 0.9s; }
+.illo-3-1 .illo-3-circles:nth-child(1) { animation: small-circle-pop 3.5s linear infinite 0.05s; }
+.illo-3-1 .illo-3-circles:nth-child(2) { animation: small-circle-pop 3.5s linear infinite 0.1s; }
+.illo-3-1 .illo-3-circles:nth-child(3) { animation: small-circle-pop 3.5s linear infinite 0.15s; }
+.illo-3-1 .illo-3-circles:nth-child(4) { animation: small-circle-pop 3.5s linear infinite 0.2s; }
+.illo-3-1 .illo-3-circles:nth-child(5) { animation: small-circle-pop 3.5s linear infinite 0.25s; }
+.illo-3-1 .illo-3-circles:nth-child(6) { animation: small-circle-pop 3.5s linear infinite 0.3s; }
+.illo-3-1 .illo-3-circles:nth-child(7) { animation: small-circle-pop 3.5s linear infinite 0.35s; }
+.illo-3-1 .illo-3-circles:nth-child(8) { animation: small-circle-pop 3.5s linear infinite 0.4s; }
+.illo-3-1 .illo-3-circles:nth-child(9) { animation: small-circle-pop 3.5s linear infinite 0.45s; }
 
-.illo-3-2 .illo-3-circles:nth-child(1) { animation: small-circle-pop 5s linear infinite 1.1s; }
-.illo-3-2 .illo-3-circles:nth-child(2) { animation: small-circle-pop 5s linear infinite 1.2s; }
-.illo-3-2 .illo-3-circles:nth-child(3) { animation: small-circle-pop 5s linear infinite 1.3s; }
-.illo-3-2 .illo-3-circles:nth-child(4) { animation: small-circle-pop 5s linear infinite 1.4s; }
-.illo-3-2 .illo-3-circles:nth-child(5) { animation: small-circle-pop 5s linear infinite 1.5s; }
-.illo-3-2 .illo-3-circles:nth-child(6) { animation: small-circle-pop 5s linear infinite 1.6s; }
-.illo-3-2 .illo-3-circles:nth-child(7) { animation: small-circle-pop 5s linear infinite 1.7s; }
-.illo-3-2 .illo-3-circles:nth-child(8) { animation: small-circle-pop 5s linear infinite 1.8s; }
-.illo-3-2 .illo-3-circles:nth-child(9) { animation: small-circle-pop 5s linear infinite 1.9s; }
+.illo-3-2 .illo-3-circles:nth-child(1) { animation: small-circle-pop 3.5s linear infinite 0.55s; }
+.illo-3-2 .illo-3-circles:nth-child(2) { animation: small-circle-pop 3.5s linear infinite 0.6s; }
+.illo-3-2 .illo-3-circles:nth-child(3) { animation: small-circle-pop 3.5s linear infinite 0.65s; }
+.illo-3-2 .illo-3-circles:nth-child(4) { animation: small-circle-pop 3.5s linear infinite 0.7s; }
+.illo-3-2 .illo-3-circles:nth-child(5) { animation: small-circle-pop 3.5s linear infinite 0.75s; }
+.illo-3-2 .illo-3-circles:nth-child(6) { animation: small-circle-pop 3.5s linear infinite 0.8s; }
+.illo-3-2 .illo-3-circles:nth-child(7) { animation: small-circle-pop 3.5s linear infinite 0.85s; }
+.illo-3-2 .illo-3-circles:nth-child(8) { animation: small-circle-pop 3.5s linear infinite 0.9s; }
+.illo-3-2 .illo-3-circles:nth-child(9) { animation: small-circle-pop 3.5s linear infinite 0.95s; }
 
-.illo-3-3 .illo-3-circles:nth-child(1) { animation: small-circle-pop 5s linear infinite 2.1s; }
-.illo-3-3 .illo-3-circles:nth-child(2) { animation: small-circle-pop 5s linear infinite 2.2s; }
-.illo-3-3 .illo-3-circles:nth-child(3) { animation: small-circle-pop 5s linear infinite 2.3s; }
-.illo-3-3 .illo-3-circles:nth-child(4) { animation: small-circle-pop 5s linear infinite 2.4s; }
-.illo-3-3 .illo-3-circles:nth-child(5) { animation: small-circle-pop 5s linear infinite 2.5s; }
-.illo-3-3 .illo-3-circles:nth-child(6) { animation: small-circle-pop 5s linear infinite 2.6s; }
-.illo-3-3 .illo-3-circles:nth-child(7) { animation: small-circle-pop 5s linear infinite 2.7s; }
-.illo-3-3 .illo-3-circles:nth-child(8) { animation: small-circle-pop 5s linear infinite 2.8s; }
-.illo-3-3 .illo-3-circles:nth-child(9) { animation: small-circle-pop 5s linear infinite 2.9s; }
+.illo-3-3 .illo-3-circles:nth-child(1) { animation: small-circle-pop 3.5s linear infinite 1.05s; }
+.illo-3-3 .illo-3-circles:nth-child(2) { animation: small-circle-pop 3.5s linear infinite 1.1s; }
+.illo-3-3 .illo-3-circles:nth-child(3) { animation: small-circle-pop 3.5s linear infinite 1.15s; }
+.illo-3-3 .illo-3-circles:nth-child(4) { animation: small-circle-pop 3.5s linear infinite 1.2s; }
+.illo-3-3 .illo-3-circles:nth-child(5) { animation: small-circle-pop 3.5s linear infinite 1.25s; }
+.illo-3-3 .illo-3-circles:nth-child(6) { animation: small-circle-pop 3.5s linear infinite 1.3s; }
+.illo-3-3 .illo-3-circles:nth-child(7) { animation: small-circle-pop 3.5s linear infinite 1.35s; }
+.illo-3-3 .illo-3-circles:nth-child(8) { animation: small-circle-pop 3.5s linear infinite 1.4s; }
+.illo-3-3 .illo-3-circles:nth-child(9) { animation: small-circle-pop 3.5s linear infinite 1.45s; }
 
-.illo-3-4 .illo-3-circles:nth-child(1) { animation: small-circle-pop 5s linear infinite 3.1s; }
-.illo-3-4 .illo-3-circles:nth-child(2) { animation: small-circle-pop 5s linear infinite 3.2s; }
-.illo-3-4 .illo-3-circles:nth-child(3) { animation: small-circle-pop 5s linear infinite 3.3s; }
-.illo-3-4 .illo-3-circles:nth-child(4) { animation: small-circle-pop 5s linear infinite 3.4s; }
-.illo-3-4 .illo-3-circles:nth-child(5) { animation: small-circle-pop 5s linear infinite 3.5s; }
-.illo-3-4 .illo-3-circles:nth-child(6) { animation: small-circle-pop 5s linear infinite 3.6s; }
-.illo-3-4 .illo-3-circles:nth-child(7) { animation: small-circle-pop 5s linear infinite 3.7s; }
-.illo-3-4 .illo-3-circles:nth-child(8) { animation: small-circle-pop 5s linear infinite 3.8s; }
-.illo-3-4 .illo-3-circles:nth-child(9) { animation: small-circle-pop 5s linear infinite 3.9s; }
+.illo-3-4 .illo-3-circles:nth-child(1) { animation: small-circle-pop 3.5s linear infinite 1.55s; }
+.illo-3-4 .illo-3-circles:nth-child(2) { animation: small-circle-pop 3.5s linear infinite 1.6s; }
+.illo-3-4 .illo-3-circles:nth-child(3) { animation: small-circle-pop 3.5s linear infinite 1.65s; }
+.illo-3-4 .illo-3-circles:nth-child(4) { animation: small-circle-pop 3.5s linear infinite 1.7s; }
+.illo-3-4 .illo-3-circles:nth-child(5) { animation: small-circle-pop 3.5s linear infinite 1.75s; }
+.illo-3-4 .illo-3-circles:nth-child(6) { animation: small-circle-pop 3.5s linear infinite 1.8s; }
+.illo-3-4 .illo-3-circles:nth-child(7) { animation: small-circle-pop 3.5s linear infinite 1.85s; }
+.illo-3-4 .illo-3-circles:nth-child(8) { animation: small-circle-pop 3.5s linear infinite 1.9s; }
+.illo-3-4 .illo-3-circles:nth-child(9) { animation: small-circle-pop 3.5s linear infinite 1.95s; }
 
 @keyframes small-circle-pop {
-  0% { stroke-width: 1; }
-  5% { stroke-width: 2; }
-  100% { stroke-width: 1; }
+  0% { 
+    stroke-width: 1;
+    transform: scale(1);
+  }
+  5% { 
+    stroke-width: 2;
+    transform: scale(1.05);
+  }
+  100% { 
+    stroke-width: 1;
+    transform: scale(1);
+  }
 }
 @keyframes big-circle-pop {
   0% { stroke-width: 1; }
