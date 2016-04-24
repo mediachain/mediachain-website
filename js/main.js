@@ -52,5 +52,11 @@
   $(window).on('load', function () {
     handleCanvasIcons.init();
   });
+
+  $(document).on('ready', function () {
+    $('#show-nav, #exit-nav').on('click', function () {
+      $('.nav-menu').toggleClass('showing');
+    });
+  });
   
 })();
