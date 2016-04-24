@@ -173,6 +173,7 @@ h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
   left: 0;
   right: 0;
 }
+.vh-100 { height: 100vh; }
 .banner-text-width { width: 75%; }
 .banner-text-h1 { font-size: calc(var(--vertical-base) * 1.75rem); }
 .banner-text-h2 { font-size: calc(var(--vertical-base) * 1.25rem); }
@@ -181,9 +182,36 @@ h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
 .main-canvas-dimensions { width: 100%; height: 38vh; }
 .max-width { max-width: 64rem; }
 .main-svg {
-  height: 300px;
+  height: 120vh;
   overflow: visible;
-  top: -4.2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.button {
+  border: 0;
+  box-shadow: 0 0 0 2px #111;
+  border-radius: 10rem;
+  background-color: transparent;
+  font-family: $font-bold;
+  font-size: $font-size;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  height: auto;
+  -webkit-appearance: none;
+  white-space: nowrap;
+  line-height: 3.4rem;
+  min-height: 3.4rem;
+  padding: 0 1.6rem;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);  
+  transition: box-shadow .2s ease;
+}
+
+.button:hover {
+  box-shadow: 0 0 0 5px #111;
 }
 
 @media only screen and (min-width: 768px) {
@@ -191,18 +219,11 @@ h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
   .md-px4 { padding-left: 4rem; padding-right: 4rem; }
   .height-65vh { height: 80vh; }
   .banner-text-width { width: 42rem; }
-  .landing { height: auto; }
-  .main-svg { 
-    height: 60vh;
-    min-height: 500px;
-    top: -5.7rem;
-  }
 }
 @media only screen and (min-width: 1200px) {
   .banner-text-width { width: 54rem; }
   .banner-text-h1 { font-size: calc(var(--vertical-base) * 2.25rem); }
   .banner-text-h2 { font-size: calc(var(--vertical-base) * 1.5rem); }
-  .main-svg { top: -6.9rem; }
   .max-width { max-width: 72rem; }
 }
 @media only screen and (min-width: 1600px) {
