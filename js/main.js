@@ -3,7 +3,7 @@
   var handleCanvasIcons = {
     icons: [],
     xStart: -85,
-    yStart: 205,
+    yStart: -235,
     honeycombWidth: 126,
     honeycombHeight: 220,
     populateIcons: function () {
@@ -18,7 +18,7 @@
     staggerPosition: function (x, y) {
       var $canvas = $('#cw-icons');
       var xCap = Math.floor($canvas.width() / this.honeycombWidth) + 1;
-      var yCap = Math.floor($canvas.height() / this.honeycombHeight) - 2;
+      var yCap = Math.floor($canvas.height() / this.honeycombHeight);
       var newCoordinates = {
         x: x + this.honeycombWidth * this.randomizer(0, xCap),
         y: y + this.honeycombHeight * this.randomizer(1, yCap)
@@ -56,6 +56,15 @@
   $(document).on('ready', function () {
     $('#show-nav, #exit-nav').on('click', function () {
       $('.nav-menu').toggleClass('showing');
+    });
+
+    $('a[href^="#"]').on('click', (e) => {
+      e.preventDefault();
+      let $this  = e.currentTarget,
+          target = $($this).attr('href'),
+          offset = $(target).offset().top;
+
+      $('body,html').animate({ scrollTop: offset}, 400);
     });
   });
   
