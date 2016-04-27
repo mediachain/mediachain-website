@@ -1,3 +1,3 @@
-# Mediachain
+# Mediachain Website
 
-Mine is a platform for decentralized content identification and interaction.
+The source code for [mediachain.io](http://mediachain.io).
