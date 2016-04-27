@@ -48,6 +48,10 @@ body {
   overflow-x: hidden;
 }
 
+html, body {
+  height: 100%;
+}
+
 a, a:link {
   color: inherit;
 }
@@ -72,7 +76,10 @@ h4, .h4 { font-size: calc(var(--vertical-base) * 1rem); }
 h5, .h5 { font-size: calc(var(--vertical-base) * 0.875rem); }
 h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
 .small { font-size: calc(var(--vertical-base) * 0.625rem); }
-.bold { font-family: var(--font-family-bold) }
+.bold { 
+  font-family: var(--font-family-bold);
+  font-weight: normal;
+}
 
 @media only screen and (min-width: 1200px) {
   h3, .h3 { font-size: calc(var(--vertical-base) * 1.5rem); }
@@ -89,6 +96,12 @@ h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
 .how-it-works {
   text-decoration: none;
 }
+
+
+.mobile-nav { display: block; }
+.desktop-nav { display: none; }
+.nav-menu { display:none; }
+.nav-menu.showing { display: table; }
 .nav-share-icon {
   position: relative;
   top: 4px;
@@ -114,6 +127,7 @@ h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
   opacity: 1; 
   transition: opacity .7s ease .3s, box-shadow .2s ease; 
 }
+
 
 .absolute { position: absolute; }
 .t0 { top: 0; }
@@ -163,6 +177,7 @@ h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
   line-height: 3.2rem;
   padding: 0 1rem;
   transition: box-shadow .2s ease;
+  -webkit-appearance: none;
 }
 .form input[type="email"]:focus {
   -moz-box-shadow: 0 0 0 5px #111;
@@ -198,9 +213,10 @@ h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
   height: 2.25rem;
 }
 
-.landing { height: 100vh; }
+.landing { height: 100%; }
 .landing-header { height: 15%; }
 .landing-body { height: 85%; }
+.no-scroll { overflow: hidden; }
 
 .vh-100 { height: 100vh; }
 .banner-text-width { width: 75%; }
@@ -211,6 +227,7 @@ h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
 .main-canvas-dimensions { width: 100%; height: 38vh; }
 .max-width { max-width: 64rem; }
 .main-svg {
+  width: 100%;
   height: 120vh;
   overflow: visible;
   position: absolute;
@@ -239,20 +256,14 @@ h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
   transition: box-shadow .2s ease;
 }
 
+.button-small {
+  line-height: 2.6rem;
+  min-height: 2.6rem;
+  padding: 0 1.2rem;
+}
+
 .button:hover {
   box-shadow: 0 0 0 5px #111;
-}
-
-.mobile-nav { display: block; }
-.desktop-nav { display: none; }
-
-.nav-menu {
-  opacity: 0;
-  visibility: hidden;
-}
-.nav-menu.showing {
-  opacity: 1;
-  visibility: visible;
 }
 
 @media only screen and (min-width: 768px) {

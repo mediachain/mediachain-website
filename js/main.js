@@ -1,5 +1,21 @@
 (function () {
 
+  $(document).on('ready', function () {
+    $('#show-nav, #exit-nav').on('click', function () {
+      $('body').toggleClass('no-scroll');
+      $('.nav-menu').toggleClass('showing');
+    });
+
+    $('a[href^="#"]').on('click', function (e)  {
+      e.preventDefault();
+      var $this  = e.currentTarget,
+          target = $($this).attr('href'),
+          offset = $(target).offset().top;
+
+      $('body,html').animate({ scrollTop: offset}, 400);
+    });
+  });
+
   var handleCanvasIcons = {
     icons: [],
     xStart: -85,
@@ -30,7 +46,7 @@
       if (index < this.icons.length/2) {
         var coordinates = this.staggerPosition(this.xStart, this.yStart);
       } else if (index >= this.icons.length/2) {
-        var coordinates = this.staggerPosition(this.xStart+63, this.yStart+110);
+        var coordinates = this.staggerPosition(this.xStart+this.honeycombWidth/2, this.yStart+this.honeycombHeight/2);
       }
 
       $(icon).css({
@@ -51,21 +67,6 @@
 
   $(window).on('load', function () {
     handleCanvasIcons.init();
-  });
-
-  $(document).on('ready', function () {
-    $('#show-nav, #exit-nav').on('click', function () {
-      $('.nav-menu').toggleClass('showing');
-    });
-
-    $('a[href^="#"]').on('click', (e) => {
-      e.preventDefault();
-      let $this  = e.currentTarget,
-          target = $($this).attr('href'),
-          offset = $(target).offset().top;
-
-      $('body,html').animate({ scrollTop: offset}, 400);
-    });
   });
   
 })();
