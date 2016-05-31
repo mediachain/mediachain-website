@@ -42,7 +42,10 @@ html {
 }
 
 body {
-  background-color: #f1f1f1;
+  background-image: url(/img/background.svg);
+  /*background-color: #f1f2f3;
+  background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.3) 50%);
+  background-size: 250px 250px;*/
   font-family: var(--font-family);
   line-height: var(--line-height-3);
   overflow-x: hidden;
@@ -54,6 +57,10 @@ html, body {
 
 a, a:link {
   color: inherit;
+}
+
+img {
+  max-width: 100%;
 }
 
 /*----------------------------------------
@@ -197,7 +204,7 @@ h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
   height: 2.25rem;
 }
 
-.landing { height: 80vh; }
+.landing { height: 60vh; }
 .landing-header { height: 15%; }
 .landing-body { height: 85%; }
 .no-scroll { overflow: hidden; }
