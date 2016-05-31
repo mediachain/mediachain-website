@@ -100,9 +100,8 @@ h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
 .full-height { height: 100%; }
 .pointer { cursor: pointer; }
 .footer { border-top: 5px solid #000; }
-.how-it-works {
-  text-decoration: none;
-}
+
+.gray { color: #bbb; }
 
 
 .mobile-nav { display: block; }
@@ -247,6 +246,22 @@ h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
   transition: box-shadow .2s ease;
 }
 
+.border-light { border: 1px solid #eee; }
+.code { font-family: monospace; }
+.bg-gray-light { background-color: #fafafa; }
+.mxn2 { margin-left: -1rem; margin-right: -1rem; }
+.health-bar {
+  border-radius: 10px;
+  width: 100%;
+  height: 10px;
+}
+.dead-bar {
+  background: #ddd;
+}
+.healthy-bar {
+  background-image: linear-gradient(-90deg, #FF00A1, #F6FF00);
+}
+
 .button-small {
   line-height: 2.6rem;
   min-height: 2.6rem;
@@ -258,6 +273,7 @@ h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
 }
 
 @media only screen and (min-width: 768px) {
+  .md-p2 { padding: 2rem; }
   .md-p4 { padding: 4rem; }
   .md-px4 { padding-left: 4rem; padding-right: 4rem; }
   .height-65vh { height: 80vh; }
