@@ -42,7 +42,7 @@ html {
 }
 
 body {
-  background-image: url(/img/background.svg);
+  background-color: #f1f1f1;
   font-family: var(--font-family);
   line-height: var(--line-height-3);
   overflow-x: hidden;
@@ -139,22 +139,6 @@ h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
   padding-bottom: 6rem;
 }
 
-
-.bg-gradient-bottom {
-  background-image: linear-gradient(top, rgba(255,255,255,0) 0%, #fff 100%);
-  background-image: -o-linear-gradient(top, rgba(255,255,255,0) 0%, #fff 100%);
-  background-image: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, #fff 100%);
-  background-image: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, #fff 100%);
-  background-image: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, #fff 100%);
-}
-.bg-gradient-top {
-  background-image: linear-gradient(bottom, rgba(255,255,255,0) 50%, #fff 100%);
-  background-image: -o-linear-gradient(bottom, rgba(255,255,255,0) 50%, #fff 100%);
-  background-image: -moz-linear-gradient(bottom, rgba(255,255,255,0) 50%, #fff 100%);
-  background-image: -webkit-linear-gradient(bottom, rgba(255,255,255,0) 50%, #fff 100%);
-  background-image: -ms-linear-gradient(bottom, rgba(255,255,255,0) 50%, #fff 100%);
-}
-
 .table { display: table; }
 .table-row { display: table-row; }
 .table-cell {
@@ -213,7 +197,7 @@ h6, .h6 { font-size: calc(var(--vertical-base) * 0.75rem); }
   height: 2.25rem;
 }
 
-.landing { height: 100%; }
+.landing { height: 80vh; }
 .landing-header { height: 15%; }
 .landing-body { height: 85%; }
 .no-scroll { overflow: hidden; }
