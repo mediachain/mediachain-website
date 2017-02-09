@@ -211,10 +211,10 @@ a.custom-link:hover { color: #00afef; text-decoration: none; }
 .how-it-works { background: #0e3e4d; padding: 80px 0; position: relative; }
 .how-it-works h2 { color: #fff; padding-bottom: 50px; }
 
-.section-wrapper { padding: 100px 0; }
+.section-wrapper { padding: 100px 0; background: url('images/blue-white-pattern.png') no-repeat center center; background-size: cover; }
 
 /* nav struxture */
-.section-wrapper { padding: 100px 0; background: url('images/bgel01.png') no-repeat center center; background-size: cover; }
+.section-wrapper { padding: 100px 0; }
 
 .cnt-container { padding-bottom: 140px; }
 .cnt-container h2 { padding-bottom: 50px; font-weight: bold; }
